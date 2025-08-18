@@ -1,0 +1,130 @@
+@import "tailwindcss";
+/* 
+/* Switzer Light 300 */
+@font-face {
+  font-family: 'Switzer';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/switzer/Switzer-Light.woff2') format('woff2'),
+       url('/fonts/switzer/Switzer-Light.woff') format('woff');
+  font-display: swap;
+}
+
+/* Switzer Regular 400 */
+@font-face {
+  font-family: 'Switzer';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/switzer/Switzer-Regular.woff2') format('woff2'),
+       url('/fonts/switzer/Switzer-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+/* Switzer SemiBold 600 */
+@font-face {
+  font-family: 'Switzer';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/switzer/Switzer-SemiBold.woff2') format('woff2'),
+       url('/fonts/switzer/Switzer-SemiBold.woff') format('woff');
+  font-display: swap;
+}
+
+/* Switzer Bold 700 (optionnel) */
+@font-face {
+  font-family: 'Switzer';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/switzer/Switzer-Bold.woff2') format('woff2'),
+       url('/fonts/switzer/Switzer-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+/* Bebas Neue */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/fonts/bebas-neue/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Archivo */
+@font-face {
+  font-family: 'Archivo';
+  src: url('/fonts/archivo/Archivo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Archivo italic */
+@font-face {
+  font-family: 'Archivo';
+  src: url('/fonts/archivo/Archivo-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+}
+
+.font-switzer {
+  font-family: 'Switzer', Arial, sans-serif;
+}
+
+.font-archivo {
+  font-family: 'Archivo', Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0; /* pour éviter les marges qui débordent */
+}
+
+
+/* Par défaut - mobile (jusqu’à 767px) */
+.flex-row-900 {
+  flex-direction: column;
+}
+
+.w-left {
+  width: 100%;
+  max-width: 100%;
+}
+
+.w-right {
+  width: 100%;
+  text-align: center;
+}
+
+/* Entre 768px et 899px : texte de la colonne droite aligné à droite */
+@media (min-width: 768px) and (max-width: 899px) {
+  .w-right {
+    text-align: right;
+  }
+}
+
+/* À partir de 900px */
+@media (min-width: 900px) {
+  .flex-row-900 {
+    flex-direction: row;
+  }
+
+  .w-left {
+    width: 70%;
+    max-width: 650px;
+  }
+
+  .w-right {
+    width: 30%;
+    text-align: right;
+  }
+
+  .text-right-900 {
+    text-align: right;
+  }
+}
+

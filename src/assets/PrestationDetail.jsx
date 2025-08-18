@@ -1,0 +1,1 @@
+export default function PrestationDetail() { return <div>Détail de la prestation</div>; }

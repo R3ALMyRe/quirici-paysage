@@ -1,0 +1,1 @@
+export default function Prestations() { return <div>Liste des prestations</div>; }
