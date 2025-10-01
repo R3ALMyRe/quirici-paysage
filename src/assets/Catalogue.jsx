@@ -4,15 +4,12 @@ export default function Catalogue() {
   const [produits, setProduits] = useState([]);
   const [selectedProduit, setSelectedProduit] = useState(null);
 
-  useEffect(() => {
-    fetch("https://script.google.com/macros/s/AKfycbzQHyKFiWK_qCzTT4-rH2GGJfFakV8-Rg3cWokyxTVsgzKge_MO_sluux2G9dsGw5ACwQ/exec")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data); // Pour vérifier ce que tu récupères
-        setProduits(data);
-      })
-      .catch((err) => console.error("Erreur chargement produits :", err));
-  }, []);
+useEffect(() => {
+  fetch("https://script.google.com/macros/s/AKfycbzQHyKFiWK_qCzTT4-rH2GGJfFakV8-Rg3cWokyxTVsgzKge_MO_sluux2G9dsGw5ACwQ/exec")
+    .then(res => res.json())
+    .then(data => setProduits(data))
+    .catch(err => console.error("Erreur chargement produits :", err));
+}, []);
 
   const openModal = (produit) => setSelectedProduit(produit);
   const closeModal = () => setSelectedProduit(null);

@@ -8,13 +8,8 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/0 backdrop-blur-md shadow-sm">
       <div className="max-w-[1200px] mx-auto flex items-center justify-between px-6 h-[78px]">
-        
         {/* LOGO */}
-        <img
-          src="/images/logo.png"
-          alt="logo"
-          className="h-[70px]"
-        />
+        <img src="/images/logo.png" alt="logo" className="h-[70px]" />
 
         {/* MENU DESKTOP */}
         <ul className="hidden md:flex items-center space-x-8 font-light font-switzer text-black ml-auto">
@@ -30,19 +25,17 @@ export default function Navbar() {
           </li>
 
           {/* Prestations avec Dropdown */}
-          <li className="relative group">
-            <NavLink
-              to="/prestations"
-              className={({ isActive }) =>
-                `hover:underline ${isActive ? "text-[#315747] font-semibold underline" : ""}`
-              }
+          <li className="relative group pt-[78px] -mt-[78px]">
+            <span className="cursor-pointer hover:underline">Prestations</span>
+            <ul
+              className="absolute left-1/2 top-full transform -translate-x-1/2 
+                         bg-white/0 backdrop-blur-md shadow-sm py-4 w-48 rounded-md 
+                         opacity-0 invisible group-hover:visible group-hover:opacity-100 
+                         group-hover:translate-y-2 transition-all duration-200 font-light text-center z-40"
             >
-              Prestations
-            </NavLink>
-            <ul className="absolute top-full left-1/2 transform -translate-x-1/2 mt-0 bg-white shadow-md py-4 w-48 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity duration-200 font-light text-center">
               <li className="border-b border-gray-200 last:border-b-0">
                 <NavLink
-                  to="/prestations/creation"
+                  to="/creation"
                   className={({ isActive }) =>
                     `block px-4 py-3 hover:bg-gray-100 ${
                       isActive ? "text-[#315747] font-semibold underline" : "text-black"
@@ -54,7 +47,7 @@ export default function Navbar() {
               </li>
               <li className="border-b border-gray-200 last:border-b-0">
                 <NavLink
-                  to="/prestations/entretien"
+                  to="/entretien"
                   className={({ isActive }) =>
                     `block px-4 py-3 hover:bg-gray-100 ${
                       isActive ? "text-[#315747] font-semibold underline" : "text-black"
@@ -66,7 +59,7 @@ export default function Navbar() {
               </li>
               <li>
                 <NavLink
-                  to="/prestations/elagage"
+                  to="/elagage"
                   className={({ isActive }) =>
                     `block px-4 py-3 hover:bg-gray-100 ${
                       isActive ? "text-[#315747] font-semibold underline" : "text-black"
@@ -111,7 +104,7 @@ export default function Navbar() {
 
       {/* MENU MOBILE */}
       {isOpen && (
-        <div className="md:hidden bg-white/90 backdrop-blur-md shadow-md">
+        <div className="md:hidden bg-white/80 backdrop-blur-md shadow-md">
           <ul className="flex flex-col items-center py-6 space-y-4 font-switzer text-black">
             <li>
               <NavLink
@@ -125,21 +118,12 @@ export default function Navbar() {
               </NavLink>
             </li>
 
-            {/* Prestations avec sous-menus */}
             <li>
-              <NavLink
-                to="/prestations"
-                onClick={() => setIsOpen(false)}
-                className={({ isActive }) =>
-                  `${isActive ? "text-[#315747] font-semibold underline" : ""}`
-                }
-              >
-                Prestations
-              </NavLink>
+              <span className="font-semibold">Prestations</span>
             </li>
             <li className="ml-4">
               <NavLink
-                to="/prestations/creation"
+                to="/creation"
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
                   `${isActive ? "text-[#315747] font-semibold underline" : ""}`
@@ -150,7 +134,7 @@ export default function Navbar() {
             </li>
             <li className="ml-4">
               <NavLink
-                to="/prestations/entretien"
+                to="/entretien"
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
                   `${isActive ? "text-[#315747] font-semibold underline" : ""}`
@@ -161,7 +145,7 @@ export default function Navbar() {
             </li>
             <li className="ml-4">
               <NavLink
-                to="/prestations/elagage"
+                to="/elagage"
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
                   `${isActive ? "text-[#315747] font-semibold underline" : ""}`

@@ -49,18 +49,19 @@ export default function Accueil() {
     <>
       {/* Section plein écran avec image de fond */}
       <div
-        className="
-          h-screen w-full max-w-full overflow-x-hidden
-          flex flex-col items-center
-          bg-cover bg-no-repeat relative
-        "
-        style={{
-          backgroundImage: "url('/images/accueil.png')",
-          backgroundPosition: "bottom center",
-        }}
-      >
+  className="
+    w-full max-w-full overflow-x-hidden
+    flex flex-col items-center
+    bg-cover bg-no-repeat relative position-absolute top-0 left-0 right-0
+  "
+  style={{
+    backgroundImage: "url('/images/accueil.png')",
+    backgroundPosition: "bottom center",
+    height: "calc(100vh - 78px)", // 80px = hauteur de ta navbar
+  }}
+>
         {/* Titre en haut */}
-        <div className="mt-[150px]">
+        <div className="mt-[100px]">
           <img
             src="/images/titreaccueil.jpg"
             alt="Titre Accueil"
@@ -81,7 +82,7 @@ export default function Accueil() {
           {/* Colonne 1 */}
           <div>
             <div className="text-4xl font-bold">
-              +<Counter target={500} duration={4000} />
+              +<Counter target={500} duration={6000} />
             </div>
             <div className="text-sm font-light">Clients satisfaits</div>
           </div>
@@ -91,7 +92,7 @@ export default function Accueil() {
           {/* Colonne 2 */}
           <div>
             <div className="text-4xl font-bold">
-              +<Counter target={8} duration={4000} />
+              +<Counter target={8} duration={2000} />
             </div>
             <div className="text-sm font-light">Années d’expérience</div>
           </div>
@@ -101,7 +102,7 @@ export default function Accueil() {
           {/* Colonne 3 */}
           <div>
             <div className="text-4xl font-bold">
-              <Counter target={2} duration={4000} />
+              <Counter target={2} duration={2000} />
             </div>
             <div className="text-sm font-light">Agences</div>
           </div>
@@ -238,7 +239,7 @@ export default function Accueil() {
     <h2 className="text-3xl md:text-2xl font-semibold text-[#315747] mb-4 leading-snug">
       Offrez une nouvelle vie à votre jardin tout en maîtrisant votre budget avec Quirici Paysage !
     </h2>
-    <p className="text-xl text-gray-700 mb-6 leading-snug">
+    <p className="text-lg text-gray-700 mb-6 leading-snug">
       Profitez d’un remboursement de 50 % grâce au crédit d’impôt dédié à l’entretien de vos extérieurs avec jusqu’à 5000€ de dépenses par an. C’est le moment idéal pour embellir votre espace vert sans vous ruiner.<br /><br />
       Contactez-nous dès maintenant pour en savoir plus.
     </p>
@@ -260,7 +261,7 @@ export default function Accueil() {
 
 
 
-<section className="max-w-7xl mx-auto px-6 sm:px-8 md:px-10 pb-16 bg-[#F3F5F7]">
+<section className="max-w-[1215px] mx-auto px-6 sm:px-8 md:px-10 pb-16 bg-[#F3F5F7]">
   <h3 className="text-[#315747] font-bold text-[30px] mb-8 text-left select-none">
     Service inclus
   </h3>
