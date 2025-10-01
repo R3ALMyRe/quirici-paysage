@@ -5,9 +5,12 @@ export default function Catalogue() {
   const [selectedProduit, setSelectedProduit] = useState(null);
 
   useEffect(() => {
-    fetch("https://api.sheetbest.com/sheets/757d9378-e95f-4bac-9ffc-f507ea34092a")
+    fetch("https://script.google.com/macros/s/AKfycbzphrBgAsyN8iEkAFhyMWWTM3cKJodrCfnGTensYAGqNMBs-9_iwbaoPE0oJ4KGrJU7YA/exec") // <- Mets ici ton URL Apps Script
       .then((res) => res.json())
-      .then((data) => setProduits(data))
+      .then((data) => {
+        console.log(data); // Pour vérifier ce que tu récupères
+        setProduits(data);
+      })
       .catch((err) => console.error("Erreur chargement produits :", err));
   }, []);
 
