@@ -5,7 +5,7 @@ export default function Catalogue() {
   const [selectedProduit, setSelectedProduit] = useState(null);
 
   useEffect(() => {
-    fetch("https://script.google.com/macros/s/AKfycbzphrBgAsyN8iEkAFhyMWWTM3cKJodrCfnGTensYAGqNMBs-9_iwbaoPE0oJ4KGrJU7YA/exec") // <- Mets ici ton URL Apps Script
+    fetch("https://script.google.com/macros/s/AKfycbzQHyKFiWK_qCzTT4-rH2GGJfFakV8-Rg3cWokyxTVsgzKge_MO_sluux2G9dsGw5ACwQ/exec")
       .then((res) => res.json())
       .then((data) => {
         console.log(data); // Pour vérifier ce que tu récupères
