@@ -26,7 +26,7 @@ export default function Creation() {
       {/* Conteneur tablette/PC : titre en haut à gauche */}
       <div className="relative w-full mt-16 hidden md:block">
         <img
-          src="/images/img-creation.png"
+          src="/images/img-creation.webp"
           alt="Fond Création"
           className="w-full h-auto max-h-[90vh] object-contain mx-auto"
         />
@@ -187,7 +187,7 @@ export default function Creation() {
               }
             >
               <img
-                src={`/images/creation-galerie-${i + 1}.jpg`}
+                src={`/images/creation-galerie-${i + 1}.webp`}
                 alt={`Galerie Création ${i + 1}`}
                 className={`w-full h-full object-cover transition-transform duration-500 ${
                   !isMobile ? "hover:scale-110" : ""
