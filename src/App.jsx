@@ -10,10 +10,12 @@ import Elagage from './assets/Elagage';
 import Creation from './assets/Creation';
 import Entretien from './assets/Entretien';
 import MentionsLegales from './assets/MentionsLegales';
+import ScrollToTop from './assets/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         
@@ -34,6 +36,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
 
 export default App;

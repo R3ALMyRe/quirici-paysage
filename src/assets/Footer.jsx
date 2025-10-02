@@ -1,7 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Important pour React Router
+import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const services = [
+    { label: "Abattage d’arbre", to: "/elagage" },
+    { label: "Élagage d’arbre", to: "/elagage" },
+    { label: "Création paysagère", to: "/creation" },
+    { label: "Entretien paysagère", to: "/entretien" },
+    { label: "Maçonnerie paysagère", to: "/creation" },
+  ];
+
   return (
     <footer className="bg-[#152821] text-white py-12 px-6 mt-50">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-30 items-start">
@@ -25,20 +33,14 @@ export default function Footer() {
             <span className="italic font-light">services</span>
           </h3>
           <ul className="w-full text-gray-200 space-y-4">
-            {[
-              { label: "Abattage d’arbre", href: "#abattage" },
-              { label: "Élagage d’arbre", href: "#elagage" },
-              { label: "Création paysagère", href: "#creation" },
-              { label: "Entretien paysagère", href: "#entretien" },
-              { label: "Maçonnerie paysagère", href: "#maconnerie" },
-            ].map((service, i) => (
+            {services.map((service, i) => (
               <li key={i} className="w-full">
-                <a
-                  href={service.href}
+                <Link
+                  to={service.to}
                   className="block py-2 border-b border-gray-500 hover:text-yellow-400 transition"
                 >
                   ➤ {service.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

@@ -229,7 +229,7 @@ export default function Elagage() {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-center">
-          {[...Array(6)].map((_, i) => (
+          {[...Array(12)].map((_, i) => (
             <div
               key={i}
               className="w-full h-56 overflow-hidden rounded-md cursor-pointer"
@@ -244,32 +244,6 @@ export default function Elagage() {
                   !isMobile ? "hover:scale-110" : ""
                 }`}
               />
-            </div>
-          ))}
-        </div>
-
-        {/* Avant/Après */}
-        <div className="flex flex-col lg:flex-row gap-2 mt-2 justify-center">
-          {[
-            { src: "/images/avant-elagage.jpg", label1: "Avant", label2: "l'intervention" },
-            { src: "/images/apres-elagage.jpg", label1: "Après", label2: "l'intervention" },
-          ].map((img, i) => (
-            <div
-              key={i}
-              className="relative lg:w-1/2 overflow-hidden cursor-pointer"
-              onClick={() => !isMobile && setSelectedImage(img.src)}
-            >
-              <img
-                src={img.src}
-                alt={img.label1}
-                className={`w-full h-full object-cover transition-transform duration-500 ${
-                  !isMobile ? "hover:scale-110" : ""
-                }`}
-              />
-              <div className="absolute bottom-0 left-0 w-full bg-[#315747] p-3 text-white text-center">
-                <span className="font-light italic">{img.label1}</span>{" "}
-                <span className="font-bold">{img.label2}</span>
-              </div>
             </div>
           ))}
         </div>

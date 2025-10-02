@@ -118,7 +118,7 @@ useEffect(() => {
                 {/* Téléphone */}
                 <div className="flex items-center mb-4 text-[16px] md:text-[18px]">
                   <span className="text-green-600 mr-3 w-5">
-                    <img src="images/telephone.svg" alt="telephone" />
+                    <img src="images/telephone-black.svg" alt="telephone" />
                   </span>
                   <a
                     href="tel:0631498703"
@@ -131,7 +131,7 @@ useEffect(() => {
                 {/* Email */}
                 <div className="flex items-center mb-6 text-[16px] md:text-[18px]">
                   <span className="text-green-600 mr-3 w-5">
-                    <img src="images/email.svg" alt="email" />
+                    <img src="images/email-black.svg" alt="email" />
                   </span>
                   <a
                     href="mailto:quiricipaysage@orange.fr"
@@ -148,7 +148,7 @@ useEffect(() => {
               </div>
 
               <div
-                className="bg-yellow-400 text-black rounded-full px-3 py-2 text-lg md:text-xl font-switzer w-max mt-6 md:mt-0 min-w-[90px] text-center"
+                className="bg-yellow-400 text-black rounded-full px-3 py-2 text-lg font-switzer w-max mt-5 min-w-[90px] text-center"
                 style={{ boxShadow: "7px 10px 10px rgba(250, 204, 21, 0.5)" }}
               >
                 {selectedProduit.Prix}
