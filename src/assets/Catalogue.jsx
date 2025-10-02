@@ -157,12 +157,12 @@ export default function Catalogue() {
               />
             </div>
 
-            <button
-              onClick={closeModal}
-              className="absolute top-5 right-5 text-gray-700 hover:text-white text-5xl font-bebas"
-            >
-              ×
-            </button>
+          <button
+            onClickCapture={closeModal}
+            className="absolute top-5 right-5 text-gray-700 hover:text-white text-5xl font-bebas"
+          >
+            ×
+          </button>
           </div>
         </div>
       )}
