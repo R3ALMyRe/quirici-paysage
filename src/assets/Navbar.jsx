@@ -9,7 +9,13 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/0 backdrop-blur-md shadow-sm">
       <div className="max-w-[1200px] mx-auto flex items-center justify-between px-6 h-[78px]">
         {/* LOGO */}
-        <img src="/images/logo.png" alt="logo" className="h-[70px]" />
+        <NavLink to="/" onClick={() => setIsOpen(false)}>
+          <img 
+            src="/images/logo.png" 
+            alt="logo" 
+            className="h-[50px] sm:h-[60px] md:h-[70px] cursor-pointer" 
+          />
+        </NavLink>
 
         {/* MENU DESKTOP */}
         <ul className="hidden md:flex items-center space-x-8 font-light font-switzer text-black ml-auto">
