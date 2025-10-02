@@ -87,7 +87,7 @@ export default function Accueil() {
           {/* Colonne 1 */}
           <div>
             <div className="text-4xl font-bold">
-              +<Counter target={500} duration={6000} />
+              +<Counter target={500} duration={4000} />
             </div>
             <div className="text-sm font-light">Clients satisfaits</div>
           </div>

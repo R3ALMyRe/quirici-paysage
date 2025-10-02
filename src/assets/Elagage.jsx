@@ -27,7 +27,7 @@ export default function Elagage() {
         {/* Conteneur tablette/PC : titre en haut à gauche sur l'image */}
         <div className="relative w-full mt-16 hidden md:block">
           <img
-            src="/images/img-elagages.jpg"
+            src="/images/img-elagages.webp"
             alt="Fond Élagage"
             className="w-full h-auto max-h-[85vh] object-contain mx-auto"
           />
@@ -89,7 +89,7 @@ export default function Elagage() {
         {/* Image */}
         <div className="md:w-1/2 flex justify-center items-start lg:justify-end">
           <img
-            src="/images/prestations-elagage.jpg"
+            src="/images/prestations-elagage.webp"
             alt="Prestations Élagage"
             className="h-full w-auto object-cover rounded-lg lg:rounded-tr-[80px]"
           />
@@ -125,7 +125,7 @@ export default function Elagage() {
       <section className="max-w-7xl w-full px-4 md:px-8 mx-auto flex flex-col lg:flex-row gap-16 mt-16">
         <div className="lg:w-1/2 flex justify-center items-start order-2 lg:order-1">
           <img
-            src="/images/elagage-responsable.jpg"
+            src="/images/elagage-responsable.webp"
             alt="Élagage responsable"
             className="h-full w-auto object-cover rounded-lg lg:rounded-bl-[80px]"
           />
@@ -234,11 +234,11 @@ export default function Elagage() {
               key={i}
               className="w-full h-56 overflow-hidden rounded-md cursor-pointer"
               onClick={() =>
-                !isMobile && setSelectedImage(`/images/elagage-${i + 1}.jpg`)
+                !isMobile && setSelectedImage(`/images/elagage-${i + 1}.webp`)
               }
             >
               <img
-                src={`/images/elagage-${i + 1}.jpg`}
+                src={`/images/elagage-${i + 1}.webp`}
                 alt={`Elagage ${i + 1}`}
                 className={`w-full h-full object-cover transition-transform duration-500 ${
                   !isMobile ? "hover:scale-110" : ""

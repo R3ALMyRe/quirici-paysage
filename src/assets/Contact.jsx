@@ -212,7 +212,7 @@ export default function ContactPage() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.36454039764!2d2.5922294768420444!3d48.876624299471206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e613d79d0dc0a5%3A0x86a504e5ff1dd6ec!2s59%20Av.%20de%20l'Abbaye%2C%2077500%20Chelles!5e0!3m2!1sfr!2sfr!4v1691332839463!5m2!1sfr!2sfr"
           className="w-full sm:w-[103%] h-full border-0"
           allowFullScreen=""
-          loading="lazy"
+          loading=""
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>

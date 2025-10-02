@@ -27,7 +27,7 @@ export default function Entretien() {
       {/* Conteneur tablette/PC : titre en haut à gauche de l'image */}
       <div className="relative w-full mt-16 hidden md:block">
         <img
-          src="/images/img-entretien.png"
+          src="/images/img-entretien.webp"
           alt="Fond Entretien"
           className="w-full h-auto max-h-[90vh] object-contain mx-auto"
         />
@@ -239,12 +239,12 @@ export default function Entretien() {
               key={i}
               className="w-full h-56 overflow-hidden rounded-md cursor-pointer"
               onClick={() =>
-                !isMobile && setSelectedImage(`/images/galerie-${i + 1}.jpg`)
+                !isMobile && setSelectedImage(`/images/galerie-${i + 1}.webp`)
               }
             >
               {/* miniature */}
               <img
-                src={`/images/galerie-${i + 1}.jpg`}
+                src={`/images/galerie-${i + 1}.webp`}
                 alt={`Galerie ${i + 1}`}
                 className={`w-full h-full object-cover transition-transform duration-500 ${
                   !isMobile ? "hover:scale-110" : ""
@@ -257,11 +257,11 @@ export default function Entretien() {
         {/* Avant / Après */}
         <div className="flex flex-col lg:flex-row gap-2 mt-2 justify-center">
           <div
-            className="relative lg:w-1/2 overflow-hidden rounded-md cursor-pointer group"
-            onClick={() => !isMobile && setSelectedImage("/images/avant.jpg")}
+            className="relative overflow-hidden rounded-md cursor-pointer group"
+            onClick={() => !isMobile && setSelectedImage("/images/avant.webp")}
           >
             <img
-              src="/images/avant.jpg"
+              src="/images/avant.webp"
               alt="Avant la remise en état"
               className={`w-full h-full object-cover transition-transform duration-500 ${
                 !isMobile ? "group-hover:scale-110" : ""
@@ -275,10 +275,10 @@ export default function Entretien() {
 
           <div
             className="relative lg:w-1/2 overflow-hidden rounded-md cursor-pointer group"
-            onClick={() => !isMobile && setSelectedImage("/images/apres.jpg")}
+            onClick={() => !isMobile && setSelectedImage("/images/apres.webp")}
           >
             <img
-              src="/images/apres.jpg"
+              src="/images/apres.webp"
               alt="Après la remise en état"
               className={`w-full h-full object-cover transition-transform duration-500 ${
                 !isMobile ? "group-hover:scale-110" : ""

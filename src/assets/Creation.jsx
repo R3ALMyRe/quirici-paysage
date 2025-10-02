@@ -79,7 +79,7 @@ export default function Creation() {
 
         <div className="lg:w-1/2 flex justify-center items-start">
           <img
-            src="/images/creation-presentation.jpg"
+            src="/images/creation-presentation.webp"
             alt="Présentation Création Paysagère"
             className="h-full w-auto object-cover rounded-lg lg:rounded-tr-[80px]"
           />
@@ -136,7 +136,7 @@ export default function Creation() {
       <section className="max-w-7xl w-full px-1 sm:px-2 md:px-8 mx-auto flex flex-col lg:flex-row gap-12 mt-16">
         <div className="lg:w-1/2 flex justify-center items-start order-2 lg:order-1">
           <img
-            src="/images/creation-maconnerie.jpg"
+            src="/images/creation-maconnerie.webp"
             alt="Maçonnerie paysagère"
             className="h-full w-auto object-cover rounded-lg lg:rounded-bl-[80px]"
           />
@@ -183,7 +183,7 @@ export default function Creation() {
               key={i}
               className="w-full h-56 overflow-hidden rounded-md cursor-pointer"
               onClick={() =>
-                !isMobile && setSelectedImage(`/images/creation-galerie-${i + 1}.jpg`)
+                !isMobile && setSelectedImage(`/images/creation-galerie-${i + 1}.webp`)
               }
             >
               <img
@@ -202,12 +202,12 @@ export default function Creation() {
 <div className="flex flex-col gap-4 mt-2">
   {[
     [
-      { src: "/images/avant-creation-1.jpg", label1: "Avant", label2: "l'intervention" },
-      { src: "/images/apres-creation-1.jpg", label1: "Après", label2: "l'intervention" },
+      { src: "/images/avant-creation-1.webp", label1: "Avant", label2: "l'intervention" },
+      { src: "/images/apres-creation-1.webp", label1: "Après", label2: "l'intervention" },
     ],
     [
-      { src: "/images/avant-creation-2.jpg", label1: "Avant", label2: "l'intervention" },
-      { src: "/images/apres-creation-2.jpg", label1: "Après", label2: "l'intervention" },
+      { src: "/images/avant-creation-2.webp", label1: "Avant", label2: "l'intervention" },
+      { src: "/images/apres-creation-2.webp", label1: "Après", label2: "l'intervention" },
     ],
     // tu peux rajouter autant de paires que tu veux
   ].map((pair, index) => (
